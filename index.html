@@ -10,54 +10,51 @@
 </head>
 
 <body>
-    <div class="container">
-
-        <label for="input-box">Input</label>
-        <input type="text" id="input-box" disabled>
-        <label for="output-box">Output</label>
-        <input type="text" id="output-box" disabled>
-        <div class="button-container">
-            <div>
-                <button type="button" id="clear" onclick="sClear()">Clear</button>
+    <div class="container-header">
+        <h1>Web Calculator</h1>
+    </div>
+    <div class="container-main-content">
+        <div class="container-image">
+            <img id="img">
+        </div>
+        <div class="container-calculator">
+            <div class="container-cal-screen">
+                <input type="text" id="input-box" disabled>
+                <input type="text" id="output-box" disabled>
             </div>
-            <div>
-                <button type="button" id="del" onclick="del()">Delete</button>
-            </div>
-
-            <div>
-                <button type="button" id="1" onclick="cal(this.id)" value="1">1</button>
-                <button type="button" id="2" onclick="cal(this.id)" value="2">2</button>
-                <button type="button" id="3" onclick="cal(this.id)" value="3">3</button>
-            </div>
-
-            <div>
-                <button type="button" id="4" onclick="cal(this.id)" value="4">4</button>
-                <button type="button" id="5" onclick="cal(this.id)" value="5">5</button>
-                <button type="button" id="6" onclick="cal(this.id)" value="6">6</button>
-            </div>
-
-            <div>
-                <button type="button" id="7" onclick="cal(this.id)" value="7">7</button>
-                <button type="button" id="8" onclick="cal(this.id)" value="8">8</button>
-                <button type="button" id="9" onclick="cal(this.id)" value="9">9</button>
-            </div>
-
-            <div>
-                <button type="button" id="0" onclick="cal(this.id)" value="0">0</button>
-                <button type="button" id="+" onclick="onOperator(this.id)" value="+">&plus;</button>
-                <button type="button" id="-" onclick="onOperator(this.id)" value="-">&minus;</button>
-            </div>
-            <div>
-                <button type="button" id="*" onclick="onOperator(this.id)" value="*">&times;</button>
-                <button type="button" id="%" onclick="onOperator(this.id)" value="%">&percnt;</button>
-                <button type="button" id="/" onclick="onOperator(this.id)" value="/">&div;</button>
-            </div>
-            <div>
-                <button type="button" id="ok" onclick="ok()" value="+">Answer</button>
+            <div class="container-cal-pad">
+                <div>
+                    <button type="button" id="clear" onclick="sClear()">C</button>
+                    <button type="button" id="7" onclick="cal(this.id)" value="7">7</button>
+                    <button type="button" id="4" onclick="cal(this.id)" value="4">4</button>
+                    <button type="button" id="1" onclick="cal(this.id)" value="1">1</button>
+                </div>
+                <div>
+                    <button type="button" id="del" onclick="del()">Del</button>
+                    <button type="button" id="8" onclick="cal(this.id)" value="8">8</button>
+                    <button type="button" id="5" onclick="cal(this.id)" value="5">5</button>
+                    <button type="button" id="2" onclick="cal(this.id)" value="2">2</button>
+                    <button type="button" id="0" onclick="cal(this.id)" value="0">0</button>
+                </div>
+                <div>
+                    <button type="button" id="%" onclick="onOperator(this.id)" value="%">&percnt;</button>
+                    <button type="button" id="9" onclick="cal(this.id)" value="9">9</button>
+                    <button type="button" id="6" onclick="cal(this.id)" value="6">6</button>
+                    <button type="button" id="3" onclick="cal(this.id)" value="3">3</button>
+                    <button type="button" id="period" onclick="cal(this.id)" value=".">&period;</button>
+                </div>
+                <div>
+                    <button type="button" id="/" onclick="onOperator(this.id)" value="/">&div;</button>
+                    <button type="button" id="*" onclick="onOperator(this.id)" value="*">&times;</button>
+                    <button type="button" id="+" onclick="onOperator(this.id)" value="+">&plus;</button>
+                    <button type="button" id="-" onclick="onOperator(this.id)" value="-">&minus;</button>
+                    <button type="button" id="ok" onclick="ok()" value="+">&equals;</button>
+                </div>
             </div>
         </div>
     </div>
     <script src="./script.js"></script>
+
 </body>
 
 </html>
