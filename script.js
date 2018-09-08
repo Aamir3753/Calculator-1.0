@@ -52,9 +52,8 @@ function ok() {
 
 document.onkeypress = function (e) {
     var x = e.which || e.keyCode;
-    if(x===8){
+   
         
-    }
     switch (x) {
         case 48:
             document.getElementById("0").click();
@@ -94,6 +93,7 @@ document.onkeypress = function (e) {
             break;
         case 8:
            document.getElementById("del").click();
+            e.preventDefault();
             break;
         case 47:
             document.getElementById("/").click();
